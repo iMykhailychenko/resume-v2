@@ -1,0 +1,31 @@
+.salary {
+  padding-bottom: 160px;
+  background: $blue;
+  color: $white;
+
+  &__inner {
+    display: flex;
+    padding: 80px 0;
+  }
+
+  &__item {
+    display: flex;
+    margin-right: 50px;
+  }
+
+  &__icon {
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    background: $gray-b;
+  }
+
+  &__ammount {
+    font-size: 4rem;
+    font-weight: 700;
+
+    &--small {
+      font-size: 1.5rem;
+    }
+  }
+}

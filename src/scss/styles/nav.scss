@@ -1,0 +1,61 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: -110%;
+  height: 100vh;
+  width: 100%;
+  padding: 30px 130px 30px 30px;
+  background: $black;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 2;
+
+  &__item {
+    list-style: none;
+    text-align: right;
+    padding: 8px 0;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    padding: 8% 10px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $white;
+    font-size: 1.2rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+      width: 0;
+      height: 1px;
+      background: $white;
+      transition: 0.3s ease-in-out;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      width: calc(100% - 20px);
+    }
+  }
+}
+
+.active {
+  .nav {
+    opacity: 1;
+    right: 0;
+
+    &__link {
+      right: 0;
+      animation: right-appearance 2s;
+    }
+  }
+}

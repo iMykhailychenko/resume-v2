@@ -1,0 +1,18 @@
+.table {
+  &__row {
+    width: 100%;
+  }
+
+  &__cell {
+    padding: 20px 20px;
+    border-top: 1px solid $gray-b;
+
+    &:nth-child(1) {
+      width: 220px;
+    }
+
+    &--padding {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.contact {
+  width: 48%;
+
+  &__title {
+    padding-top: 20px;
+    font-size: 1.3rem;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 0;
+  }
+
+  &__phone-wrp {
+    position: relative;
+  }
+}

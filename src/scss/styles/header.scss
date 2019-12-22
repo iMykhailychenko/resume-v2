@@ -1,0 +1,126 @@
+.header {
+  position: relative;
+  min-height: 800px;
+  overflow: hidden;
+
+  &__emoji {
+    font-size: 2.6rem;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: calc(100% - 5%);
+    padding-top: 30px;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  &__burger {
+    position: relative;
+    height: 15px;
+    width: 35px;
+    background: none;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: $black;
+      transition: 0.3s ease-in-out;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__desc {
+    position: relative;
+    margin: 220px auto 0;
+    width: 500px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  &__title {
+    padding-bottom: 40px;
+    font-size: 1.67rem;
+    font-weight: 700;
+    color: $black;
+  }
+
+  &__text {
+    color: $black;
+    font-size: 1rem;
+  }
+
+  &__btn {
+    position: relative;
+    top: 0;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin: 50px auto 0;
+    transition: 0.2s;
+    text-align: center;
+    color: $black;
+
+    &:hover {
+      padding-top: 10px;
+    }
+  }
+
+  &__parallax {
+    position: absolute;
+    top: 160px;
+    height: 50%;
+    width: 40%;
+    background: rgba(80, 80, 80, 0.4);
+    z-index: -2;
+    transition: .3s;
+  }
+
+  .parallax1,
+  .parallax2 {
+    left: 30px;
+    transform: translateY();
+  }
+
+  .parallax3,
+  .parallax4 {
+    right: 30px;
+  }
+}
+
+.active {
+  .header__burger {
+    &::before,
+    &::after {
+      background: $white;
+    }
+
+    &::before {
+      top: 45%;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: 45%;
+      transform: rotate(-45deg);
+    }
+  }
+}

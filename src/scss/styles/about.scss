@@ -1,0 +1,21 @@
+.about {
+  position: relative;
+
+  &__img {
+    height: 900px;
+    width: 80%;
+    background: url('https://cdn.pixabay.com/photo/2019/10/01/18/20/heide-4519041_1280.jpg')
+      center no-repeat;
+    background-size: cover;
+    margin: 0 auto 40px;
+  }
+
+  &__wrp {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    flex-basis: 48%;
+  }
+}
