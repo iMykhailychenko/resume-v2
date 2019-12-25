@@ -5,8 +5,6 @@
     margin-bottom: 20px;
 
     &--controlpay {
-      background: url('https://raw.githubusercontent.com/iMykhailychenko/SCSS-PUG/master/images.jpg')
-        center no-repeat;
       background-size: 100%;
       transition: 0.5s;
 
@@ -17,8 +15,6 @@
 
     &--kpmg {
       margin-top: 120px;
-      background: url('https://raw.githubusercontent.com/iMykhailychenko/SCSS-PUG/master/kan_senator_1.jpg')
-        no-repeat;
       background-position: 50% 10%;
       background-size: 100%;
       transition: 0.5s;
@@ -44,5 +40,6 @@
     list-style-type: circle;
     margin-left: 40px;
     padding: 0 0 10px 20px;
+    line-height: 1.4;
   }
 }

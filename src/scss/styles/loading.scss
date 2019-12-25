@@ -1,0 +1,27 @@
+.placeholder {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 80%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  &__svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 200px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.visible ~ .about__img {
+  filter: blur(5px);
+}
+
+.visible {
+  display: block;
+}

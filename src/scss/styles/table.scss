@@ -1,4 +1,8 @@
 .table {
+  &__body {
+    border-collapse: collapse;
+  }
+
   &__row {
     width: 100%;
   }

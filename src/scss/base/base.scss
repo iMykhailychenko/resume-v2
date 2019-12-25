@@ -57,6 +57,24 @@ body {
   }
 }
 
+.copied {
+  background: $green;
+  color: $white;
+  border-radius: 6px;
+  text-decoration: none;
+
+  &:hover {
+    background: $green;
+  }
+}
+
 section {
   padding: 200px 0 0;
+}
+
+kbd {
+  margin: 0 2px;
+  padding: 2px 4px;
+  background: $gray-l;
+  border-radius: 6px;
 }

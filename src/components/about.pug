@@ -1,6 +1,19 @@
 section.about
     .animation
-        .about__img
+        .about__img-wrp
+            .placeholder
+                svg.placeholder__svg(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewbox='0 0 100 100' enable-background='new 0 0 0 0' xml:space='preserve')
+                    path(fill='#fff' d='M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50')
+                        animatetransform(attributename='transform' attributetype='XML' type='rotate' dur='1s' from='0 50 50' to='360 50 50' repeatcount='indefinite')
+            img.about__img(src="https://cdn.pixabay.com/photo/2016/11/10/17/00/forest-1814723_960_720.jpg" alt="")
+            .about__popup
+                i.material-icons.about__icon skip_next
+                p.about__text Не нравиться картинка?
+                p.about__text Кликай чтобы поменять на другую!
+            .about__warn.hidden
+                i.material-icons.about__icon.about__icon--red warning
+                p.about__text Упсс. Что-то пошло не так
+                p.about__text Проверьте подключение к Интернету
         .container
             h2.about__title.title#about ПОЧЕМУ Я МЕНЯЮ ПРОФФЕСИЮ? &#129300
             .about__wrp
@@ -24,16 +37,24 @@ section.about
                 ul.contact__list
                     li.contact__item
                         p.contact__text Электронная почта:
-                        a.contact__mail.link(href='' title='') 
+                        a.contact__mail.link.link--copy(href='' title='') 
                             span  igor.c.m@ukr.net
                             span.popup
-                                span.popup__title Hужна возможность устанавливать
-                                span.popup__text Hужна возможность
+                                span.popup__title Кликни чтобы скопировать
+                                span.popup__text Не нужно нажимать 
+                                    kbd Ctrl
+                                    kbd C
+                                br
+                                span.popup__text Я ценю ваше время :)
                     li.contact__item
                         p.contact__text Телефон:
                         .contact__phone-wrp
-                            a.contact__phone.link(href='' title='')
+                            a.contact__phone.link.link--copy(href='' title='')
                                 span  +380(97)702-45-04
                                 span.popup
-                                    span.popup__title Hужна возможность устанавливать
-                                    span.popup__text Hужна возможность
+                                    span.popup__title Кликни чтобы скопировать
+                                    span.popup__text Не нужно нажимать 
+                                        kbd Ctrl
+                                        kbd C
+                                    br
+                                    span.popup__text Я ценю ваше время :)
