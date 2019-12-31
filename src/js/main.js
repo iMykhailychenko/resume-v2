@@ -1,13 +1,18 @@
 // styles
 import '../scss/main.scss';
 
-// favicon
-import '../img/favicon.png';
+// images
+// import '../img/favicon.png';
+// import '../img/control_pay.jpg';
+// import '../img/kpmg.jpg';
+import '../img/about.jpg';
 
 // JavaScript
 import '../components/templates/skills';
-import './scripts/header_nav';
+import './scripts/headerNav';
 import './scripts/parallax';
-import './scripts/about_img';
-import './scripts/copy_link';
+import './scripts/aboutImg';
+import './scripts/copyLink';
 import './scripts/rotate';
+import './scripts/slider';
+import './scripts/salsryObserver';

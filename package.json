@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iMykhailychenko/Webpack-Project-Template.git"
+    "url": "git+https://github.com/iMykhailychenko/Resume_v2.git"
   },
   "author": "imykhailychenko <igor.c.m@ukr.net>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iMykhailychenko/Webpack-Project-Template/issues"
+    "url": "https://github.com/iMykhailychenko/Resume_v2/issues"
   },
-  "homepage": "https://github.com/iMykhailychenko/Webpack-Project-Template#readme",
+  "homepage": "https://github.com/iMykhailychenko/Resume_v2#readme",
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
@@ -36,8 +36,9 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
     "pug-loader": "^2.4.0",
+    "resolve-url-loader": "^3.1.1",
     "sass-loader": "^8.0.0",
-    "style-loader": "^1.1.1",
+    "style-loader": "^1.1.2",
     "stylelint-config-recommended": "^3.0.0",
     "url-loader": "^3.0.0",
     "webpack": "^4.41.4",
@@ -46,8 +47,10 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "countup.js": "^2.0.4",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
+    "progressbar.js": "^1.1.0",
     "pug": "^2.0.4"
   }
 }

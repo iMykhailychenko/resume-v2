@@ -1,31 +1,48 @@
 .salary {
-  padding-bottom: 160px;
+  padding-bottom: 300px;
   background: $blue;
   color: $white;
 
   &__inner {
     display: flex;
+    margin-left: 20px;
     padding: 80px 0;
   }
 
-  &__item {
-    display: flex;
-    margin-right: 50px;
-  }
-
-  &__icon {
-    height: 200px;
+  &__graph {
+    position: relative;
     width: 200px;
-    margin-right: 20px;
-    background: $gray-b;
+    margin-right: 200px;
   }
 
   &__ammount {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 30px;
     font-size: 4rem;
     font-weight: 700;
+  }
 
-    &--small {
-      font-size: 1.5rem;
-    }
+  &__popup {
+    position: absolute;
+    bottom: -90px;
+    left: 110%;
+    min-width: 160px;
+    padding: 16px;
+    font-size: 0.86rem;
+    border: 2px solid $white;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-weight: 700;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .hidden {
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
   }
 }

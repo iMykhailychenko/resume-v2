@@ -1,4 +1,4 @@
-import placeholder from './loading_img';
+import placeholder from './loadingImg';
 
 export default {
   fetchImg(calback, page) {

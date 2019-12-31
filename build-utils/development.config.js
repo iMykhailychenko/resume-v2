@@ -2,12 +2,18 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = env => ({
-  devtool: 'eval',
+  devtool: 'none',
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader',
+          'resolve-url-loader',
+          'sass-loader',
+        ],
       },
     ],
   },

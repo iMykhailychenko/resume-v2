@@ -16,6 +16,7 @@ module.exports = env => ({
           'css-loader',
           MediaQueryPlugin.loader,
           'postcss-loader',
+          'resolve-url-loader',
           'sass-loader',
         ],
       },

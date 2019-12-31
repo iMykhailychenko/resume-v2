@@ -1,9 +1,9 @@
 import imgQuery from './fetchImg';
-import placeholder from './loading_img';
+import placeholder from './loadingImg';
 import {
   getDataFromLocalStorage,
   setDataToLocalStorage,
-} from './local_storage';
+} from './localStorage';
 
 let currentPage = getDataFromLocalStorage('page');
 let currentIndex = getDataFromLocalStorage('index');

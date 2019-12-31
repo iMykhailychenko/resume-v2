@@ -1,21 +1,19 @@
 .skills {
-  padding: 120px 0;
+  padding-bottom: 300px;
   overflow: hidden;
-
-  &__carousel {
-    position: relative;
-  }
 
   .carousel {
     position: relative;
     width: 90%;
 
     &__list {
+      position: relative;
+      left: 0;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       padding: 60px 40px 40px;
-      width: calc(100% * 11 / 4);
+      width: max-content;
       transition: 1s;
       list-style: none;
       cursor: pointer;
@@ -23,7 +21,7 @@
 
     &__item {
       position: relative;
-      width: calc(100% / 11);
+      width: 380px;
       margin-right: 20px;
       perspective: 1000px;
       transform-style: preserve-3d;
@@ -61,13 +59,17 @@
       background: none;
     }
 
+    &__text {
+      background: $gray-l;
+      border-radius: 8px;
+    }
+
     &__btn {
       margin-right: 40px;
       padding: 10px 20px;
       height: 40px;
       width: 80px;
-      background: none;
-      border: 1px solid $gray-b;
+      background: $gray-l;
       transition: 0.2s;
 
       &:nth-of-type(1):hover {
