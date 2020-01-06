@@ -17,6 +17,7 @@ links.forEach(item => {
     const isActive = header.classList.contains('active');
     if (isActive) {
       header.classList.remove('active');
+      document.body.style.overflow = 'auto';
     }
   });
 });
