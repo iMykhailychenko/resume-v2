@@ -1,9 +1,9 @@
 class Slider {
-  constructor({ sliderWrp, btnPrev, btnNext, slidePerClick }) {
+  constructor({ sliderWrp, btnPrev, btnNext, slidesPerClick }) {
     this.sliderWrp = sliderWrp;
     this.btnPrev = btnPrev;
     this.btnNext = btnNext;
-    this.slidePerClick = slidePerClick;
+    this.slidesPerClick = slidesPerClick;
     this.position = 0;
     this.width = this.sliderWrp.offsetWidth;
     this.items = this.sliderWrp.childElementCount;
@@ -12,7 +12,7 @@ class Slider {
   }
 
   getWidthOfOneClick() {
-    return Math.round(this.width / this.items) * this.slidePerClick;
+    return Math.round(this.width / this.items) * this.slidesPerClick;
   }
 
   getMaxPosition() {
@@ -29,7 +29,7 @@ class Slider {
       const isMaxPosition = this.position * -1 > this.getMaxPosition();
       if (isMaxPosition) {
         this.position = 0;
-      };
+      }
       this.renderClick();
     });
   }
@@ -40,7 +40,7 @@ class Slider {
       this.position += widthOfOneClick;
       if (this.position > 0) {
         this.position = -this.getMaxPosition();
-      };
+      }
       this.renderClick();
     });
   }
@@ -54,5 +54,5 @@ new Slider({
   sliderWrp: document.querySelector('.carousel__list'),
   btnPrev: document.querySelector('.carousel__back'),
   btnNext: document.querySelector('.carousel__next'),
-  slidePerClick: 3,
+  slidesPerClick: 3,
 });

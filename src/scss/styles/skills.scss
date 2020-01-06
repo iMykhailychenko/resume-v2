@@ -47,6 +47,7 @@
 
     &__icon {
       margin-bottom: 20px;
+      padding: 12px;
       height: 60px;
       width: 60px;
       background: $gray-l;
@@ -60,30 +61,45 @@
     }
 
     &__text {
+      padding: 5px 0;
       background: $gray-l;
-      border-radius: 8px;
+      line-height: 2.2;
+      box-shadow: -6px 0 0 $gray-l, 6px 0 0 $gray-l;
     }
 
     &__btn {
-      margin-right: 40px;
-      padding: 10px 20px;
-      height: 40px;
-      width: 80px;
+      height: 50px;
+      width: 100px;
+      margin-right: 10px;
       background: $gray-l;
       transition: 0.2s;
 
       &:nth-of-type(1):hover {
-        padding: 10px 30px 10px 10px;
+        padding-right: 10px;
       }
 
       &:nth-of-type(2):hover {
-        padding: 10px 10px 10px 30px;
+        padding-left: 10px;
       }
     }
 
-    &__arrow {
-      height: 16px;
-      width: 16px;
+    .inactive {
+      .carousel {
+        &__box {
+          background: #f4f4f4;
+          color: $gray-b;
+          border: 1px solid #f4f4f4;
+        }
+
+        &__icon {
+          background: none;
+        }
+
+        &__text {
+          background: none;
+          line-height: 1.6;
+        }
+      }
     }
   }
 }

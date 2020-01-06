@@ -1,0 +1,40 @@
+.cats {
+  background: $gray-l;
+  padding-bottom: 300px;
+
+  &__icon {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+    color: $gray-b;
+    font-size: 1.2rem;
+  }
+
+  &__facts {
+    max-height: 600px;
+    margin-top: 30px;
+    width: 100%;
+    overflow-y: auto;
+    list-style: none;
+  }
+
+  &__loader {
+    position: relative;
+    height: 100px;
+  }
+
+  &__item {
+    background: $white;
+    padding: 20px;
+    margin: 5px 40px 30px 0;
+    border-radius: 8px;
+  }
+
+  &__text {
+    padding: 0;
+    line-height: 1.8;
+  }
+}

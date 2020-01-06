@@ -10,7 +10,7 @@ class Parallax {
   scroll() {
     window.addEventListener(
       'scroll',
-      throttle(this.entryObserver.bind(this), 200),
+      throttle(this.entryObserver.bind(this), 100),
     );
   }
 

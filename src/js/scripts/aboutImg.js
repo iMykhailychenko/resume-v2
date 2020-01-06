@@ -18,12 +18,13 @@ const getDataFomFetch = data => {
 const changeImg = () => {
   imgQuery.fetchImg(getDataFomFetch, currentPage);
   img.addEventListener('click', () => {
-    if (currentIndex === 30) {
+    if (currentIndex === 29) {
       currentPage += 1;
       currentIndex = 0;
 
       placeholder.show();
       imgQuery.fetchImg(getDataFomFetch, currentPage);
+      img.src = arr[currentIndex];
 
       setDataToLocalStorage('index', currentIndex);
       setDataToLocalStorage('page', currentPage);

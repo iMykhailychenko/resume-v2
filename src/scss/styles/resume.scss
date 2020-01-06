@@ -14,8 +14,8 @@
 
   &__img-wrp {
     position: relative;
-    flex-basis: 55%;
-    height: 380px;
+    flex-basis: 45%;
+    height: 340px;
     perspective: 1000px;
     transform-style: preserve-3d;
     transition: 0.2s;
@@ -30,54 +30,16 @@
     transition: 0.2s;
   }
 
-  &__icon {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    background: $green;
-    top: 80px;
-    right: 20px;
-    transform: translateZ(50px) scale(0.8);
-  }
-
   &__desc {
     padding: 0 20px;
-    flex-basis: 45%;
+    flex-basis: 55%;
   }
 
   &__text--card {
-    min-height: 140px;
-  }
-
-  &__link-wrp {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 120px;
+    padding-bottom: 30px;
   }
 
   &__link {
-    display: inline-block;
-    font-weight: 600;
-    margin: 8px;
-    padding: 12px 0;
-    color: $gray-b;
-    text-decoration: none;
-    transition: 0.2s;
-
-    &::after {
-      content: ' \2192';
-      opacity: 0;
-      transition: 0.2s;
-    }
-
-    &:hover {
-      letter-spacing: 0.5px;
-      text-decoration: underline;
-
-      &::after {
-        opacity: 1;
-      }
-    }
+    margin: 5px 0;
   }
 }

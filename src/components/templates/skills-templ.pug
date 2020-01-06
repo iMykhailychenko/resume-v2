@@ -1,8 +1,17 @@
 each entry in list
-    li.carousel__item
-        .carousel__box
-            .carousel__skills
-                i.carousel__icon.material-icons=entry.icon
-                .carousel__wrp
-                    h3.carousel__title.title=entry.title
-                    span.carousel__text.text=entry.text
+    if entry.learning
+        li(class=`carousel__item ${entry.learning}`)
+            .carousel__box
+                .carousel__skills
+                    i(class=`${entry.icon} + carousel__icon`)
+                    .carousel__wrp
+                        h3.carousel__title.title=entry.title
+                        span.carousel__text.text=entry.text
+    else
+        li.carousel__item
+            .carousel__box
+                .carousel__skills
+                    i(class=`${entry.icon} + carousel__icon`)
+                    .carousel__wrp
+                        h3.carousel__title.title=entry.title
+                        span.carousel__text.text=entry.text

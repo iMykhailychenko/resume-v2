@@ -27,7 +27,7 @@ const onEntry = (entries, observer) => {
 
       setTimeout(() => {
         popup.classList.add('hidden');
-      }, 6000);
+      }, 5000);
     }
   });
 };

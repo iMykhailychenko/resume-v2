@@ -7,7 +7,7 @@
     height: 30px;
     width: 30px;
     margin-right: 30px;
-    background: $black;
+    fill: $black;
     border-radius: 50%;
     transition: .3s;
   }
@@ -27,7 +27,7 @@
     }
 
     &__masseger {
-      background: $white;
+      fill: $white;
     }
   }
 }

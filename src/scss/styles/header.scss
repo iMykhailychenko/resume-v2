@@ -54,6 +54,7 @@
     width: 500px;
     text-align: center;
     z-index: 1;
+    animation: top-appearance 2s ease-in-out;
   }
 
   &__title {
@@ -79,7 +80,7 @@
     transition: 0.2s;
     text-align: center;
     color: $black;
-    animation: downBtn 1s ease-in-out infinite;
+    animation: downBtn 2s ease-in-out infinite;
   }
 
   &__parallax {
@@ -89,11 +90,11 @@
     width: 40%;
     z-index: -2;
     transition: 0.3s;
+    animation: top-appearance-parallax 3s ease-in-out;
   }
 
   .parallax1 {
     left: 30px;
-    // background: url('./img/control_pay.jpg');
   }
 
   .parallax2 {
