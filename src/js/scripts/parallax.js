@@ -10,15 +10,11 @@ class Parallax {
   scroll() {
     window.addEventListener(
       'scroll',
-      throttle(this.entryObserver.bind(this), 100),
+      throttle(this.entryObserver.bind(this), 200),
     );
   }
 
   entryObserver() {
-    const options = {
-      rootMargin: '50px',
-    };
-
     const onEntry = entries => {
       entries.forEach(item => {
         if (item.isIntersecting) {
@@ -28,7 +24,7 @@ class Parallax {
       });
     };
 
-    const observer = new IntersectionObserver(onEntry, options);
+    const observer = new IntersectionObserver(onEntry, undefined);
     this.element.forEach(item => observer.observe(item));
   }
 
@@ -38,20 +34,13 @@ class Parallax {
   }
 
   render(element, position) {
-    if (this.orientation) {
-      element.style = `transform: translateY(${position}px);`;
-    } else {
-      element.style = `transform: translateX(${position / 2}px);`;
-    }
+    element.style = `transform: translateX(${position / 2}px);`;
   }
 }
 
 new Parallax({
-  selector: '.header__parallax',
-  orientation: true,
+  selector: '.cite__word',
 });
 
-new Parallax({
-  selector: '.cite__word',
-  orientation: false,
-});
+const Rellax = require('rellax');
+const rellax = new Rellax('.header__parallax');

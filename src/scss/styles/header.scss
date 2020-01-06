@@ -54,7 +54,6 @@
     width: 500px;
     text-align: center;
     z-index: 1;
-    animation: top-appearance 2s ease-in-out;
   }
 
   &__title {
@@ -90,21 +89,14 @@
     width: 40%;
     z-index: -2;
     transition: 0.3s;
-    animation: top-appearance-parallax 3s ease-in-out;
   }
 
-  .parallax1 {
-    left: 30px;
-  }
-
+  .parallax1,
   .parallax2 {
     left: 30px;
   }
 
-  .parallax3 {
-    right: 30px;
-  }
-
+  .parallax3,
   .parallax4 {
     right: 30px;
   }
@@ -126,5 +118,21 @@
       bottom: 45%;
       transform: rotate(-45deg);
     }
+  }
+}
+
+.introduction {
+  .header__desc {
+    animation: top-appearance 2s ease-in-out;
+  }
+
+  .parallax1,
+  .parallax3 {
+    animation: top-appearance-parallax 3.2s ease-in-out;
+  }
+
+  .parallax2,
+  .parallax4 {
+    animation: top-appearance-parallax 2.5s ease-in-out;
   }
 }

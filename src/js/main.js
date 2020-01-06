@@ -4,6 +4,7 @@ import '../img/about.jpg';
 require('@fortawesome/fontawesome-free/js/all');
 
 // JavaScript
+import './scripts/pageLoading';
 import '../components/templates/skills';
 import './scripts/headerNav';
 import './scripts/parallax';

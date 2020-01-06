@@ -25,4 +25,33 @@
     font-weight: 400;
     color: $black;
   }
+
+  &__map {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
 }
+
+.popup--map {
+  width: 500px;
+}
+
+.copied {
+  background: $green;
+  color: $white;
+  border-radius: 6px;
+  text-decoration: none;
+
+  &:hover {
+    background: $green;
+  }
+}
+
+kbd {
+  margin: 0 2px;
+  padding: 2px 4px;
+  background: $gray-l;
+  border-radius: 6px;
+}
+
