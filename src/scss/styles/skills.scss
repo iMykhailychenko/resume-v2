@@ -61,6 +61,16 @@
       background: none;
     }
 
+    &__layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: none;
+      transform: translateZ(101px);
+    }
+
     &__text {
       padding: 5px 0;
       background: $gray-l;

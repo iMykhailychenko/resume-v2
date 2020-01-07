@@ -14,25 +14,17 @@
 
   &__img-wrp {
     position: relative;
-    flex-basis: 45%;
+    flex-basis: 10%;
     height: 340px;
     perspective: 1000px;
     transform-style: preserve-3d;
     transition: 0.2s;
-  }
-
-  &__img {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background: $blue;
-    transform-style: preserve-3d;
-    transition: 0.2s;
+    font-size: 3.5rem;
   }
 
   &__desc {
-    padding: 0 20px;
-    flex-basis: 55%;
+    padding: 0 30px;
+    flex-basis: 90%;
   }
 
   &__text--card {

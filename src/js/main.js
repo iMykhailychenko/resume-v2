@@ -1,6 +1,7 @@
 // styles
 import '../scss/main.scss';
 import '../img/about.jpg';
+import '../img/favicon.png';
 require('@fortawesome/fontawesome-free/js/all');
 
 // JavaScript

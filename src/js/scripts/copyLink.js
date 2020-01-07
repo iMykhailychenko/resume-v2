@@ -16,10 +16,12 @@ links.forEach(item => {
       const text = item.firstElementChild.textContent;
       item.firstElementChild.textContent = 'Copied!';
       item.classList.add('copied');
+      item.style.background = 'rgb(11, 183, 171)';
 
       setTimeout(() => {
         item.firstElementChild.textContent = text;
         item.classList.remove('copied');
+        item.style = 'none';
       }, 1200);
     } catch (err) {
       console.log('Copy error' + err);
