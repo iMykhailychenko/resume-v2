@@ -5,7 +5,7 @@
   }
 
   &__item {
-    flex-basis: 320px;
+    flex-basis: 32%;
     list-style: none;
     perspective: 1000px;
     transform-style: preserve-3d;
@@ -53,5 +53,14 @@
     font-weight: 700;
     font-size: 2.5rem;
     transform: translateZ(100px);
+  }
+}
+
+
+@media (max-width: 1500px) {
+  .education {
+    &__subtitle {
+      font-size: 2rem;
+    }
   }
 }
