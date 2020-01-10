@@ -50,7 +50,8 @@
       padding: 16px;
       height: 60px;
       width: 60px;
-      background: $gray-l;
+      background: $green;
+      color: $white;
     }
 
     &__title {
@@ -104,6 +105,7 @@
 
         &__icon {
           background: none;
+          color: $black;
         }
 
         &__text {
