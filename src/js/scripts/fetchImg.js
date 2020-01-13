@@ -2,7 +2,7 @@ import placeholder from './loadingImg';
 
 export default {
   fetchImg(calback, page) {
-    const url = `https://pixabay.com/api/?key=6396306-bb47bc53f6111712a04accee8`;
+    const url = `https://pixabay.com/api/?key=14898579-fa1d2465db163140d99de90b7`;
     const param = `&category=nature&editors_choice=true&per_page=30&orientation=horizontal&image_type=photo&page=${page}`;
 
     return fetch(url + param)
