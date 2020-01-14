@@ -1,10 +1,10 @@
 const throttle = require('lodash.throttle');
 
 class Parallax {
-  constructor({ selector, orientation }) {
+  constructor({ selector, active }) {
     this.element = document.querySelectorAll(selector);
-    this.orientation = orientation;
-    this.scroll();
+    this._active = active;
+    window.requestAnimationFrame(this.scroll.bind(this));
   }
 
   scroll() {
@@ -33,14 +33,27 @@ class Parallax {
     return position;
   }
 
+  get active() {
+    return this._active;
+  }
+
+  set active(value) {
+    this._active = value;
+  }
+
   render(element, position) {
-    element.style = `transform: translateX(${position / 2}px);`;
+    if (this._active) {
+      element.style = `transform: translateX(${position / 2}px);`;
+    }
   }
 }
 
-new Parallax({
+const parallax = new Parallax({
   selector: '.cite__word',
+  active: true,
 });
 
 const Rellax = require('rellax');
-const rellax = new Rellax('.header__parallax');
+new Rellax('.header__parallax');
+
+export { parallax };

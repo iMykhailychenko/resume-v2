@@ -35,3 +35,5 @@ const onEntry = (entries, observer) => {
 const observer = new IntersectionObserver(onEntry, options);
 
 observer.observe(elem);
+
+export { observer };

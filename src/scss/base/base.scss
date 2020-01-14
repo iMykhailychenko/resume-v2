@@ -60,3 +60,7 @@ body {
 section {
   padding: 200px 0 0;
 }
+
+.disable-hover {
+  pointer-events: none;
+}
