@@ -9,8 +9,8 @@ const bar1 = new ProgressBar.Circle(firstBar, {
   duration: 4500,
   easing: 'bounce',
   strokeWidth: 20,
-  from: { color: 'rgb(11, 183, 171)', a: 0 },
-  to: { color: 'rgb(243, 136, 163)', a: 1 },
+  from: { color: 'rgb(250, 250, 250)', a: 0 },
+  to: { color: 'rgb(238, 108, 108)', a: 1 },
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
   },
@@ -23,8 +23,8 @@ const bar2 = new ProgressBar.Circle(secondBar, {
   duration: 4500,
   easing: 'bounce',
   strokeWidth: 20,
-  from: { color: 'rgb(11, 183, 171)', a: 0 },
-  to: { color: 'rgb(134, 230, 223)', a: 1 },
+  from: { color: 'rgb(250, 250, 250)', a: 0 },
+  to: { color: 'rgb(250, 250, 250)', a: 1 },
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
   },

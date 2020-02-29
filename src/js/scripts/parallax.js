@@ -1,4 +1,5 @@
 const throttle = require('lodash.throttle');
+const Rellax = require('rellax');
 
 class Parallax {
   constructor({ selector, active }) {
@@ -53,7 +54,25 @@ const parallax = new Parallax({
   active: true,
 });
 
-const Rellax = require('rellax');
-new Rellax('.header__parallax');
+const header = document.querySelector('.header');
+const rellax = new Rellax('.header__parallax');
+
+const options = {
+  rootMargin: '10px',
+};
+
+const onEntry = (entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      rellax.refresh();
+    } 
+    if (!entry.isIntersecting) {
+      rellax.destroy();
+    }
+  });
+};
+
+const observer = new IntersectionObserver(onEntry, options);
+observer.observe(header);
 
 export { parallax };

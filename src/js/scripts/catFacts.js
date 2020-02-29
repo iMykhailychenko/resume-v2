@@ -3,7 +3,6 @@ import facts from './fetchCatFacts';
 const templ = require('../../components/templates/cats-templ.pug');
 const loader = document.querySelector('.cats__loader');
 let currentPage = 1;
-let arr = [];
 
 const getDataFomFetch = data => {
   const items = templ({ list: data });
@@ -15,7 +14,7 @@ const options = {
   rootMargin: '180px',
 };
 
-const onEntry = (entries, observer) => {
+const onEntry = (entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       currentPage += 1;
