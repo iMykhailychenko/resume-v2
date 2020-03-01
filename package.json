@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iMykhailychenko/Resume_v2.git"
+    "url": "git+https://github.com/iMykhailychenko/resume_v2.git"
   },
   "author": "imykhailychenko <igor.c.m@ukr.net>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iMykhailychenko/Resume_v2/issues"
+    "url": "https://github.com/iMykhailychenko/resume_v2/issues"
   },
-  "homepage": "https://github.com/iMykhailychenko/Resume_v2#readme",
+  "homepage": "https://github.com/iMykhailychenko/resume_v2#readme",
   "devDependencies": {
     "@babel/core": "^7.8.6",
     "@babel/preset-env": "^7.8.6",
