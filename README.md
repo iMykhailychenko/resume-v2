@@ -1,8 +1,10 @@
 # RESUME
 
-![print scrin](https://avatars0.githubusercontent.com/u/50461642?s=460&v=4)
+#### Для просмотра веб версии резюме переходите по этой [ссылке](https://imykhailychenko.github.io/resume-v2/dist/)
 
-## Для просмотра веб версии резюме переходите по этой [ссылке](https://imykhailychenko.github.io/resume-v2/dist/)
+## Внимание, это ранняя версия резюме! Смотрите более новую версию по этой [ссылке](https://ihor-mykhailychenko.netlify.app/)
+
+![print scrin](https://avatars0.githubusercontent.com/u/50461642?s=460&v=4)
 
 ## Персональные данные
 
